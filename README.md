@@ -1,5 +1,5 @@
 # cloud-run-wordpress
-Deploy a Wordpress site on Google Cloud Run
+Medium article: [Deploy a Wordpress site on Google Cloud Run](https://medium.com/@salvopappalardo/how-to-install-a-wordpress-site-on-google-cloud-run-828bdc0d0e96)
 
 # Deploy steps
 ## Build image
