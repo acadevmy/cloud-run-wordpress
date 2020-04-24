@@ -8,7 +8,7 @@ RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/a
 COPY wordpress/wp-config.php /var/www/html/wp-config.php
 
 # download and install cloud_sql_proxy
-RUN apt-get update && apt-get install net-tools wget && \
+RUN apt-get update && apt-get -y install net-tools wget && \
     wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O /usr/local/bin/cloud_sql_proxy && \ 
     chmod +x /usr/local/bin/cloud_sql_proxy
 
